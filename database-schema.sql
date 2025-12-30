@@ -1,7 +1,7 @@
 -- Tables pour le système de thèmes partagé
 -- À exécuter dans la base de données db_apps
 
--- Types de thèmes (MUI, Tailwind, etc.)
+-- Types de thèmes (MUI, CSS, etc.)
 CREATE TABLE IF NOT EXISTS TB_UI_THEME_TYPES (
     id SERIAL PRIMARY KEY,
     code TEXT NOT NULL UNIQUE,
