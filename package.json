@@ -1,0 +1,44 @@
+{
+  "name": "shared-theme",
+  "version": "1.0.0",
+  "description": "Shared theme library for React frontends with database-driven theme management",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "generate-sql": "node scripts/generate-themes-sql.js",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/material": "^7.0.0",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "rollup": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^5.8.0"
+  },
+  "keywords": [
+    "react",
+    "mui",
+    "themes",
+    "theme-switcher",
+    "typescript",
+    "database-driven"
+  ],
+  "license": "MIT"
+}
